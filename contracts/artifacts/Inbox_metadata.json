@@ -1,10 +1,29 @@
 {
 	"compiler": {
-		"version": "0.8.23+commit.f704f362"
+		"version": "0.8.22+commit.4fc1097e"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "git",
+						"type": "string"
+					}
+				],
+				"name": "forGit",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
 			{
 				"inputs": [],
 				"name": "greet",
@@ -79,11 +98,11 @@
 	},
 	"sources": {
 		"contracts/Inbox.sol": {
-			"keccak256": "0x986c2b24765eafa5477d702d5eeca1111284c1e5fb99433b0df05f94cc5179c3",
+			"keccak256": "0x2e55594e1f9e53d5d718814b40538a3f037f4710b9fab4f005cd77e2bc95910e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://d8f6f572be61c9dfe4a442424867de624c22419412e03a9ac72fc3856ab5c581",
-				"dweb:/ipfs/QmZmCme1F7Ar7tqrGH8MrcKgyirxweUHCUPivzD9d7Mwr1"
+				"bzz-raw://8a2466a371dd81339f96784e5c80811b5ec6d1838f8223318107d257c713ee7b",
+				"dweb:/ipfs/QmVYH1SHrkLyBjePwKdRyLJQ8SERVFG65xEn7etFU4aYKA"
 			]
 		}
 	},
