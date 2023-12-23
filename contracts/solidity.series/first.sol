@@ -10,10 +10,11 @@ contract FunctionIntro {
     function sub(uint x,uint y) external  pure  returns (uint){
         return  x - y;
     }
-
+ 
     function viewFunctionsView() external  view returns (uint){
         return state;
     }
+    
     function pureFunctionsNeitherReadNorWrite(uint x, uint y) external  pure returns(uint){
         return x + y;
     }
