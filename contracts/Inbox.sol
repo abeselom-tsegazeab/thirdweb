@@ -7,6 +7,9 @@ contract Inbox{
     string public greet = 'greeting';
     function sayHi(string calldata _name) public pure  returns (string memory){
         return _name; 
+    }
 
+    function forGit(string calldata git) public pure   returns(string memory){
+        return git;
     }
 }
