@@ -6,24 +6,17 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "num",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "sender",
+				"name": "accounts",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "contract Account",
 						"name": "",
 						"type": "address"
 					}
@@ -35,31 +28,13 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_test",
+						"name": "_owner",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
 					}
 				],
-				"name": "setVars",
+				"name": "createAccount",
 				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "value",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -76,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/solidity.series/deploy.sol": "DelegateCall"
+			"contracts/solidity.series/deploy.sol": "AccountFactory"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -91,11 +66,11 @@
 	},
 	"sources": {
 		"contracts/solidity.series/deploy.sol": {
-			"keccak256": "0xed62aac0506177c818b659add14f90b93a739b86af713ef1c00542dc51aa167b",
+			"keccak256": "0xffca0a92829d4d7c0e5399b5c28a3e970bab595ca4c1d6507c52f64197337ae9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8a4f4e8a6bbad7ef447dfe2f4e0418fae7d5af96625928070e276919a8d767c0",
-				"dweb:/ipfs/QmX4e7N9iD63Xw1gyPXnpKk1XC6ffHGsuThyqBTmA2zZM5"
+				"bzz-raw://681434e5954453a0e3198d4295d99750924856a07fb5980ccf4656c513d9e374",
+				"dweb:/ipfs/QmerxbC8vWtWVBYpZr2kSTVjkn91RSfM6ExJmUYG81TNxX"
 			]
 		}
 	},
