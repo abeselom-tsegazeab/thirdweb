@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/solidity.series/deploy.sol": "ArrayLib"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/solidity.series/deploy.sol": {
+			"keccak256": "0xffca0a92829d4d7c0e5399b5c28a3e970bab595ca4c1d6507c52f64197337ae9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://681434e5954453a0e3198d4295d99750924856a07fb5980ccf4656c513d9e374",
+				"dweb:/ipfs/QmerxbC8vWtWVBYpZr2kSTVjkn91RSfM6ExJmUYG81TNxX"
+			]
+		}
+	},
+	"version": 1
+}
