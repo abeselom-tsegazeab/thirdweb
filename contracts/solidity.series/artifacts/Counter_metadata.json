@@ -1,10 +1,26 @@
 {
 	"compiler": {
-		"version": "0.8.22+commit.4fc1097e"
+		"version": "0.8.23+commit.f704f362"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "caller",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "MyError",
+				"type": "error"
+			},
 			{
 				"inputs": [],
 				"name": "count",
@@ -31,6 +47,84 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "sum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testAssert",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "e",
+						"type": "uint256"
+					}
+				],
+				"name": "testCustomError",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "testRequire",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "testRevert",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -46,7 +140,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/solidity.series/first.sol": "Counter"
+			"contracts/solidity.series/Counter.sol": "Counter"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -60,12 +154,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/solidity.series/first.sol": {
-			"keccak256": "0x1e4c09613039afa282026316b062b0f7d5a7bdb2e5119307b82af060c11179e7",
+		"contracts/solidity.series/Counter.sol": {
+			"keccak256": "0xd3c3ba93beb5bfa63a3ad4a872f88252d48f16ea1cf55dc2e1337e9b27e8b4a9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://62a4961a809b58bd14ad179a2865f482e3e23b9ea96689ef9cd34ab15f363f95",
-				"dweb:/ipfs/QmVjLMvTBsqU3uTtz2shUrhfuFZS8SNzJs3xvk5gC3763m"
+				"bzz-raw://8165f0850cbcd5b3116f4ea4797a024615fc5592659eead9492071d561629c44",
+				"dweb:/ipfs/QmP8VKH82LAExWX7V5ATaDsaUXghiy3issX4dR7Rg1LqNX"
 			]
 		}
 	},
