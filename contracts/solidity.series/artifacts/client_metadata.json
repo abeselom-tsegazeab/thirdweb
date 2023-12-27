@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_obj",
+						"type": "address"
+					}
+				],
+				"name": "setObject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "useExistingAddressOfContract",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "useTheNewKeyWord",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/solidity.series/Counter.sol": "client"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/solidity.series/Counter.sol": {
+			"keccak256": "0xd3c3ba93beb5bfa63a3ad4a872f88252d48f16ea1cf55dc2e1337e9b27e8b4a9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8165f0850cbcd5b3116f4ea4797a024615fc5592659eead9492071d561629c44",
+				"dweb:/ipfs/QmP8VKH82LAExWX7V5ATaDsaUXghiy3issX4dR7Rg1LqNX"
+			]
+		}
+	},
+	"version": 1
+}
