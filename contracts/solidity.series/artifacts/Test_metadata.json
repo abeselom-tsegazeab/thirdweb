@@ -8,12 +8,17 @@
 			{
 				"inputs": [
 					{
-						"internalType": "contract TestContract",
-						"name": "_test",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
 					}
 				],
-				"name": "getX",
+				"name": "testMax",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -21,43 +26,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_test",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_x",
-						"type": "uint256"
-					}
-				],
-				"name": "setX",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_test",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_x",
-						"type": "uint256"
-					}
-				],
-				"name": "setXandRecieveEther",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -74,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/solidity.series/deploy.sol": "callTestContract"
+			"contracts/solidity.series/deploy.sol": "Test"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
