@@ -6,14 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balances",
+				"inputs": [],
+				"name": "GetValue",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -25,34 +19,16 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "example",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
 					}
 				],
-				"name": "isFriend",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
+				"name": "SetValue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -69,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/solidity.series/Counter.sol": "Mapping"
+			"contracts/solidity.series/Counter.sol": "Helloworld"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
