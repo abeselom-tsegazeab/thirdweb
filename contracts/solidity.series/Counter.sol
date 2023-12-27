@@ -112,35 +112,36 @@ contract Ownable {
         _;
     }
 
-    function setOwner(address _newOwner) external  onlyOwner {
+    function setOwner(address _newOwner) external onlyOwner {
         require(_newOwner != address(0), "Invalid address");
         owner = _newOwner;
     }
 
-// Function Outputs
+    // Function Outputs
     // Return multiple outputs
     // Named Outputs
     // Destructuring Assignment
-
-
 }
-contract FunctionOutputs{
-        function returnMany() public  pure returns(uint,bool){
-            return(1,true);
-        }
-        function named()public pure returns (uint x,bool b){
-            return(1,true);
-        }
-         function assigned()public pure returns (uint x,bool b){
-            x = 1;
-            b = true;
-        } 
 
-        // function destructuringAssignments()public  pure{
-        //    (uint x, bool b) = returnMany();
-        //    (, bool _b) = returnMany(); // if we want the second one but not the first
-        // }
+contract FunctionOutputs {
+    function returnMany() public pure returns (uint256, bool) {
+        return (1, true);
     }
+
+    function named() public pure returns (uint256 x, bool b) {
+        return (1, true);
+    }
+
+    function assigned() public pure returns (uint256 x, bool b) {
+        x = 1;
+        b = true;
+    }
+
+    // function destructuringAssignments()public  pure{
+    //    (uint x, bool b) = returnMany();
+    //    (, bool _b) = returnMany(); // if we want the second one but not the first
+    // }
+}
 
 // Arrays - dynamic or fixed
 // Initialization
@@ -148,9 +149,9 @@ contract FunctionOutputs{
 // Creating array in memory
 // Returning array from function
 
-contract Array{
-    uint[] public nums = [1,2,3,4];
-    uint[3] public  numsFixed = [4,5,6];
+contract Array {
+    uint256[] public nums = [1, 2, 3, 4];
+    uint256[3] public numsFixed = [4, 5, 6];
 
     function examples() external {
         nums.push(4);
@@ -162,114 +163,121 @@ contract Array{
 
         // create array in memory
         // push and pop are not available for array created in memory
-        uint[] memory a = new uint[](5); // array in memory must be fixed 
-       a[1] = 1;
+        uint256[] memory a = new uint256[](5); // array in memory must be fixed
+        a[1] = 1;
     }
 
-    function returnArray() external  view returns (uint[] memory){
+    function returnArray() external view returns (uint256[] memory) {
         return nums;
-        // this function copy nums into memory and return it 
+        // this function copy nums into memory and return it
         // returning array from a function is not recommended (it uses a lot of gas, like big loops)
     }
 }
 
-contract ArrayShift{
-    uint[] public plane;
-    function example() public  {
-        plane = [1,2,3];
+contract ArrayShift {
+    uint256[] public plane;
+
+    function example() public {
+        plane = [1, 2, 3];
         delete plane[1]; // [1,0,3]
     }
 
-    function remove(uint _index) public {
-        require(_index < plane.length,"Index out of bound");
-        for(uint i = _index;i< plane.length -1 ; i++){
+    function remove(uint256 _index) public {
+        require(_index < plane.length, "Index out of bound");
+        for (uint256 i = _index; i < plane.length - 1; i++) {
             plane[i] = plane[i + 1];
         }
         plane.pop();
     }
 }
 
-contract ArrayReplaceLast{
-    uint[] public array;
-    function replace(uint _index) public{
+contract ArrayReplaceLast {
+    uint256[] public array;
+
+    function replace(uint256 _index) public {
         array[_index] = array[array.length - 1];
         array.pop();
     }
-    function test() external returns(uint[] memory){
-        array = [1,2,3,4,5];
+
+    function test() external returns (uint256[] memory) {
+        array = [1, 2, 3, 4, 5];
         replace(1);
-        return(array);
+        return (array);
     }
 }
-// Mapping 
+
+// Mapping
 // simple and nested declaration
 // set,get,delete
-contract Mapping{
-    mapping(address => uint) public balances;// simple mapping
-    mapping (address =>mapping (address=>bool))public  isFriend; // nested mapping
-   function example() external {
-    balances[msg.sender] = 123;
-    // uint bal = balances[msg.sender];
-    // uint bal2 = balances[address(1)];
-    balances[msg.sender] += 456;
-    delete balances[msg.sender];
-    isFriend[msg.sender][address(this)] = true;
-   }
+contract Mapping {
+    mapping(address => uint256) public balances; // simple mapping
+    mapping(address => mapping(address => bool)) public isFriend; // nested mapping
+
+    function example() external {
+        balances[msg.sender] = 123;
+        // uint bal = balances[msg.sender];
+        // uint bal2 = balances[address(1)];
+        balances[msg.sender] += 456;
+        delete balances[msg.sender];
+        isFriend[msg.sender][address(this)] = true;
+    }
 }
 
 // Iterable Mapping
-contract IterableMapping{
-    mapping (address => uint) public balances;
-    mapping (address => bool) public  inserted;
+contract IterableMapping {
+    mapping(address => uint256) public balances;
+    mapping(address => bool) public inserted;
     address[] public keys;
 
-    function set(address _key,uint _val) external {
+    function set(address _key, uint256 _val) external {
         balances[_key] = _val;
 
-        if(!inserted[_key]){
-            inserted[_key]= true;
+        if (!inserted[_key]) {
+            inserted[_key] = true;
             keys.push(_key);
         }
     }
 
-    function getSize()external view returns(uint){
+    function getSize() external view returns (uint256) {
         return keys.length;
     }
 
-    function first() external  view returns (uint){
+    function first() external view returns (uint256) {
         return balances[keys[0]];
     }
 }
 
-contract Structs{
-    struct Car{
+contract Structs {
+    struct Car {
         string model;
-        uint year;
+        uint256 year;
         address owner;
     }
     Car public car;
     Car[] public cars;
-    function examples()external {
-        Car memory toyota = Car("Toyota",1900,msg.sender);
-        Car memory lambo = Car({year:1980,model:"Lamborghini",owner:msg.sender});
+
+    function examples() external {
+        Car memory toyota = Car("Toyota", 1900, msg.sender);
+        Car memory lambo = Car({
+            year: 1980,
+            model: "Lamborghini",
+            owner: msg.sender
+        });
         Car memory tesla;
         tesla.model = "Tesla";
         tesla.year = 2000;
         tesla.owner = msg.sender;
-        
+
         cars.push(toyota);
         cars.push(lambo);
         cars.push(tesla);
 
-        cars.push(Car("Ferrari",2020,msg.sender));
-         
+        cars.push(Car("Ferrari", 2020, msg.sender));
     }
-
-
 }
 
 contract Enum {
-    enum Status{
+    enum Status {
         None,
         Pending,
         Shiped,
@@ -280,14 +288,14 @@ contract Enum {
 
     Status public status;
 
-    struct Order{
+    struct Order {
         address buyer;
         Status status;
     }
 
     Order[] public orders;
 
-    function get() public  view returns(Status){
+    function get() public view returns (Status) {
         return status;
     }
 
@@ -295,12 +303,45 @@ contract Enum {
         status = _status;
     }
 
-    function ship()external {
+    function ship() external {
         status = Status.Shiped;
     }
 
     function reset() external {
         delete status;
-         // this will reset to the defaul value, in this case the default value for an enum is the first value provided
+        // this will reset to the defaul value, in this case the default value for an enum is the first value provided
+    }
+}
+
+contract Helloworld {
+    uint256 private simpleInt;
+
+    function GetValue() public view returns (uint256) {
+        return simpleInt;
+    }
+
+    function SetValue(uint256 _value) public {
+        simpleInt = _value;
+    }
+}
+
+contract client {
+    address obj;
+
+
+    function setObject(address _obj) external {
+        obj = _obj;
+    }
+
+    function useTheNewKeyWord() public returns (uint256) {
+        Helloworld myobj = new Helloworld();
+        myobj.SetValue(10);
+        return myobj.GetValue();
+    }
+
+    function useExistingAddressOfContract() public returns (uint256) {
+        Helloworld myobj = Helloworld(obj);
+        myobj.SetValue(10);
+        return myobj.GetValue();
     }
 }
