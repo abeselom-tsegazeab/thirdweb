@@ -6,26 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "num",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "sender",
+				"name": "array",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256",
 						"name": "",
-						"type": "address"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -35,18 +28,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_num",
+						"name": "i",
 						"type": "uint256"
 					}
 				],
-				"name": "setVars",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "value",
+				"name": "testFind",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -71,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/solidity.series/deploy.sol": "TestDelegateCall"
+			"contracts/solidity.series/deploy.sol": "TestArray"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
