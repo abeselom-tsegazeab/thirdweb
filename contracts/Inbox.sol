@@ -13,3 +13,17 @@ contract Inbox{
         return git;
     }
 }
+
+contract Message {
+    string public  text;
+    string public greet = 'greeting';
+
+    function sayHello(string calldata _text) public  pure returns (string memory){
+        return _text;
+    }
+
+    function EditText(string calldata _edited) public  returns(string memory){
+        text = _edited;
+        return text;
+    }
+}
