@@ -82,11 +82,11 @@
 	},
 	"sources": {
 		"contracts/solidity.series/deploy.sol": {
-			"keccak256": "0xffca0a92829d4d7c0e5399b5c28a3e970bab595ca4c1d6507c52f64197337ae9",
+			"keccak256": "0x371adee7004782d24b6262598ee9e2301051fbf5d9a1db2a53ed29f27ecda744",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://681434e5954453a0e3198d4295d99750924856a07fb5980ccf4656c513d9e374",
-				"dweb:/ipfs/QmerxbC8vWtWVBYpZr2kSTVjkn91RSfM6ExJmUYG81TNxX"
+				"bzz-raw://ea915e9e0cc37d4ffeac95635ae0673d040fdc59caef1f91d4511cb02c7aa5c4",
+				"dweb:/ipfs/QmZFXHL9PxSazvtFuZNKxwidML6XQkr9AcT1V7eiXzzfa4"
 			]
 		}
 	},
