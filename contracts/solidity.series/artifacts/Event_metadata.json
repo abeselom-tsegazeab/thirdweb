@@ -122,11 +122,11 @@
 	},
 	"sources": {
 		"contracts/solidity.series/simple.sol": {
-			"keccak256": "0xe8aaca59776d3efe2ac5f251fb8d9cc3065cbc99fa57f62a8a63a607ac197988",
+			"keccak256": "0xeebdd7d90c01e77af75b70f9a1d656dcff5ef0f8e2a7f9f323b40daf31936a7c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fd2bc5ee4390165c80ced8c10ce5b9696d28049f138f2a7b90413a13bcaf8d52",
-				"dweb:/ipfs/Qmc7sBrHqEwknvetKBa4LmsxP8VYceHFE9qwXCUQooJ46B"
+				"bzz-raw://cb46f71e8313b9c47acffce0394c6c654f989ce71866c9c257660ac226dbf7eb",
+				"dweb:/ipfs/QmXnGrLRNtwyautWGNo6K5JFyxVoe8AmsvfbfVuykWWoUp"
 			]
 		}
 	},
