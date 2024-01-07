@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "bar",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "foo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/solidity.series/simple.sol": "F"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/solidity.series/simple.sol": {
+			"keccak256": "0xeebdd7d90c01e77af75b70f9a1d656dcff5ef0f8e2a7f9f323b40daf31936a7c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cb46f71e8313b9c47acffce0394c6c654f989ce71866c9c257660ac226dbf7eb",
+				"dweb:/ipfs/QmXnGrLRNtwyautWGNo6K5JFyxVoe8AmsvfbfVuykWWoUp"
+			]
+		}
+	},
+	"version": 1
+}
