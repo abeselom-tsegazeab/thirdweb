@@ -47,6 +47,12 @@ contract C is B{
     }
 }
 
+contract F is B{
+     function bar() public pure virtual   override returns (string memory) {
+        return "C";
+    }
+}
+
 // order of inheritance - most base-lke to  derived
 // this means the contract which has least num of contracts it inherits
 
